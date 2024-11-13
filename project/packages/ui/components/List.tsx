@@ -1,5 +1,20 @@
 import React from 'react'
 
-export const List = () => {
-  return <p>List</p>
+interface Pokemon {
+  name: string;
+  url: string;
+}
+
+interface ListProps {
+  items: Pokemon[];
+}
+
+export const List = ({ items }: ListProps) => {
+  return (
+    <ul>
+      {items.map((pokemon, index) => (
+        <li key={index}>{pokemon.name}</li>
+      ))}
+    </ul>
+  );
 }
