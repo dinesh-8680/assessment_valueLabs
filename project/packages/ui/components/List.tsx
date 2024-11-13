@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styles from './List.module.css';
 
 interface Pokemon {
   name: string;
@@ -11,9 +12,9 @@ interface ListProps {
 
 export const List = ({ items }: ListProps) => {
   return (
-    <ul>
+    <ul className={styles.gridContainer}>
       {items.map((pokemon, index) => (
-        <li key={index}>{pokemon.name}</li>
+        <li className={styles.item} key={index}>{pokemon.name}</li>
       ))}
     </ul>
   );
