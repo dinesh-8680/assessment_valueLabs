@@ -33,9 +33,12 @@ const pokemonSlice = createSlice({
       state.error = action.payload;
       state.loading = false;
     },
+    removePokemon: (state: PokemonState, action: PayloadAction<string>) => {
+      state.list = state.list.filter(pokemon => pokemon.name !== action.payload);
+    },
   },
 });
 
-export const { setLoading, setPokemons, setError } = pokemonSlice.actions;
+export const { setLoading, setPokemons, setError, removePokemon } = pokemonSlice.actions;
 
 export default pokemonSlice.reducer;
