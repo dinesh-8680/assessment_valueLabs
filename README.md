@@ -58,27 +58,27 @@ commit the code as `task-4`<br>
 
 ## Task 5:
 Assignment: Create button for each pokémon where an Action will be dispatched to remove the pokémon from the store 
-Question 6: How can you verify the action has been dispatched?
+Question 6: How can you verify the action has been dispatched?<br>
 Answer: store.getActions() will give us the details on what actions were dispatched.
 
 ## Task 6:
-Question 7: explain the use of `useEffect` hook in React
+Question 7: explain the use of `useEffect` hook in React<br>
 Answer: useEffect is used to perform side effects in functional components, such as fetching data or manipulating the DOM. You can specify dependencies, so it runs when those dependencies change. If you pass an empty array [], it runs only once after the component mounts. It's a way to handle logic that doesn't directly relate to rendering the UI.
 
-Question 8: What is A High Order Component?
+Question 8: What is A High Order Component?<br>
 Answer: A High Order Component (HOC) is a function that takes a component and returns a new component with additional props or behavior. It's a pattern for reusing component logic across multiple components without changing their original structure. HOCs are often used for things like authentication checks, routing, or adding additional functionality to existing components.
 
-Question 9: What use cases would a HOC be usefull?
+Question 9: What use cases would a HOC be usefull?<br>
 Answer: HOC are useful for situations where you need to share functionality or logic across multiple components without repeating code. Some common use cases include adding authentication checks, managing component state, handling permissions, logging, and fetching data. They allow you to encapsulate reusable logic and keep your components clean and focused on their primary responsibilities.
 
-Question 10: What does it indicate when a component is prefixed with `use` and `with`
+Question 10: What does it indicate when a component is prefixed with `use` and `with`<br>
 Answer: When a component is prefixed with use, it typically refers to a custom hook in React, which follows the convention for hooks. Custom hooks are functions that allow you to reuse stateful logic across multiple components.
 When a component is prefixed with with, it usually refers to a Higher-Order Component (HOC). HOCs are used to wrap a component to add extra functionality, like withAuth for adding authentication logic or withRouter for injecting routing-related props.
 
-Question 11: What is a Generic type in typescript?
+Question 11: What is a Generic type in typescript?<br>
 Answer: A generic type in TypeScript allows you to define a function, class, or interface that works with any data type, while still preserving type safety. Generics provide flexibility by enabling you to pass a type as a parameter to the function or class. For example, you can define a function that works with both numbers and strings, and TypeScript will infer the correct type when you call it, ensuring type consistency.
 
-Question 12: Whats the difference between a controlled and uncontrolled input in React?
+Question 12: Whats the difference between a controlled and uncontrolled input in React?<br>
 Answer: A controlled input is an input element whose value is controlled by React state. The value of the input is set by a state variable, and any change in the input triggers an update to the state through an event handler, like onChange.
 An uncontrolled input, on the other hand, is one where the value is handled by the DOM itself rather than React. You access the value using a ref, and it doesn’t require React to manage the state of the input.
 
